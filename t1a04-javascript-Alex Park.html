@@ -1,0 +1,56 @@
+<h2 allign=center> Javascript by Alex </h2>
+
+Enter your name:<input id="myText01" type=text value=Alex>
+<input type=button value= "click me" onClick ="{
+
+    
+ 
+     
+     
+     // alert(document.getElementById('myText01').value)
+      
+      document.getElementById('myDiv01').innerHTML = '<font color=red> '+document.getElementById('myText01').value+' </font>'
+
+
+
+}" > 
+
+<div id="myDiv01" style="font-size:40px;"> writing here</div>
+
+
+
+
+
+
+
+This is a math equation
+<input id="myText02" type=number value="Numbers here">
+<input type=button value= "Solve" onClick ="{
+
+
+   document.getElementById(myDiv02').innerHTML = '<font color=blue> *2 </font>'
+}">
+
+
+
+<div id="myDiv02" style="font-size:40px;"> Answer here</div>
+
+
+
+
+
+Enter how you are feeling <input id="myText03" type=text placeholder="sad">
+
+<div id="myDiv03" style="font-size:40px;color:red;">....</div>
+<input type=button value="Then Click here" onClick="{
+
+ if (document.getElementById('myText03').value ==''){alert('please enter a feeling')}
+ 
+ else {
+
+document.getElementById('myDiv03').innerHTML =
+   'So you are feeling ' + document.getElementById('myText03').value + '?'
+  }
+}">
+
+
