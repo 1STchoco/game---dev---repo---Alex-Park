@@ -1,0 +1,51 @@
+<script>
+function myCubeBetter(x){
+  return x*x*x
+
+
+
+}
+</script>
+
+<input id="myName01"  type=text value="3"  > 
+<div id="myDivOut01">....</div>
+
+<input type=button value="Cube the number" onClick="{  
+   document.getElementById('myDivOut01').innerHTML =  
+        myCubeBetter(document.getElementById('myName01').value);
+}" > <br> <br>
+
+<script>
+function mydoubleBetter(x){
+    return x*x
+}
+
+</script>
+
+<input id="myName02" type=text value="2"  >
+<div id="myDivOut02">....</div>
+    
+<input type=button value=" square the number" onClick="{  
+        document.getElementById('myDivOut02').innerHTML =  
+          mydoubleBetter(document.getElementById('myName02').value);
+}" > <br> <br>
+
+
+<script>
+function mydoubleandadd2Better(x){
+  return 2*x+2
+
+}
+</script>
+
+<input id="myName03"  type=text value="5"  > 
+<div id="myDivOut03">....</div>
+
+<input type=button value="double and add 2" onClick="{  
+   document.getElementById('myDivOut03').innerHTML =  
+        mydoubleandadd2Better(document.getElementById('myName03').value);
+}" > <br> <br>
+
+
+
+
