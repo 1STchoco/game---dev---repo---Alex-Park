@@ -1,0 +1,100 @@
+<h2 align=center>Calculator by Alex</h2>
+
+<input id="myTextA"  type=text value="3"  > 
+<input id="myTextB"  type=text value="+"  > 
+<input id="myTextC"  type=text value="4"  > <br>
+   
+
+
+<input type=button value=" = " onClick="{  
+   myNum1 = parseFloat(document.getElementById('myTextA').value)
+   mySign = document.getElementById('myTextB').value
+   myNum2 = parseFloat(document.getElementById('myTextC').value)
+
+
+
+  mytotal = 0
+
+  if (mySign == '+')  {
+      myTotal = myNum1 + myNum2 
+   }
+
+
+  if (mySign == '-')  {
+      myTotal = myNum1 - myNum2 
+   }
+
+  
+
+  if (mySign == '*')  {
+      myTotal = myNum1 * myNum2 
+   }
+
+
+  if (mySign == '/')  {
+      myTotal = myNum1 / myNum2 
+   }
+
+  if (mySign == '^')  {
+      myTotal = myNum1 ^ myNum2 
+   }
+
+
+
+
+
+ document.getElementById('myDiv01').innerHTML += myNum1 + ' ' + mySign + ' ' + myNum2 + ' = ' + myTotal + '<br>'
+
+ 
+
+}" >
+
+
+
+<input type=button value="Clear Output" onClick="{  
+      document.getElementById('myDiv01').innerHTML =  '' 
+}" >
+
+
+
+
+
+
+
+<br><br>
+
+<input type=button value="7"onClick="{ document.getElementById('myTextA').value +=  '7' }" >
+<input type=button value="8"onClick="{ document.getElementById('myTextA').value +=  '8' }" > 
+<input type=button value="9"onClick="{ document.getElementById('myTextA').value +=  '9' }" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input  type=button value="+" onClick="{ document.getElementById('myTextB').value =  '+' }" >
+<input type=button value="- "onClick="{ document.getElementById('myTextB').value =  '-' }" >
+<input type=button value="*"onClick="{ document.getElementById('myTextB').value =  '*' }" > 
+<input type=button value="/ "onClick="{ document.getElementById('myTextB').value = '/' }" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=button value="7"onClick="{ document.getElementById('myTextC').value +=  '7' }" >
+<input type=button value="8"onClick="{ document.getElementById('myTextC').value +=  '8' }" > 
+<input type=button value="9"onClick="{ document.getElementById('myTextC').value +=  '9' }" >
+<br>  
+                    
+<input type=button value="4"onClick="{ document.getElementById('myTextA').value +=  '4' }" >
+<input type=button value="5"onClick="{ document.getElementById('myTextA').value +=  '5' }" > 
+<input type=button value="6"onClick="{ document.getElementById('myTextA').value +=  '6' }" > 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=button value="4"onClick="{ document.getElementById('myTextC').value +=  '4' }" >
+<input type=button value="5"onClick="{ document.getElementById('myTextC').value +=  '5' }" > 
+<input type=button value="6"onClick="{ document.getElementById('myTextC').value +=  '6' }" > 
+<br>
+ 
+<input type=button value="1"onClick="{ document.getElementById('myTextA').value +=  '1' }" > 
+<input type=button value="2"onClick="{ document.getElementById('myTextA').value +=  '2' }" > 
+<input type=button value="3"onClick="{ document.getElementById('myTextA').value +=  '3' }" >  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=button value="1"onClick="{ document.getElementById('myTextC').value +=  '1' }" > 
+<input type=button value="2"onClick="{ document.getElementById('myTextC').value +=  '2' }" > 
+<input type=button value="3"onClick="{ document.getElementById('myTextC').value +=  '3' }" >  
+<br>
+
+
+
+<div id="myDiv01">....<br></div>
